@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "@/assets/images/logo.svg";
 
 export default function LandingFooter() {
   const currentYear = new Date().getFullYear();
@@ -10,27 +11,12 @@ export default function LandingFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="bg-[#00B750] rounded-full p-2">
-                <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="20" fill="#00B750" />
-                  <rect x="10" y="15" width="20" height="10" rx="5" fill="white" />
-                  <circle cx="15" cy="20" r="2" fill="#00B750" />
-                  <circle cx="25" cy="20" r="2" fill="#00B750" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold">kaarobot<span className="text-[#00B750]">.pk</span></span>
-            </div>
+            <Image src={logo} alt="Kaarobot" className="mb-4" height={36} />
             <p className="text-white/60 text-sm mb-4">
               Reduce COD returns with smart WhatsApp confirmations for your Shopify store.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
-              <a href="#" className="bg-white/10 hover:bg-[#00B750] transition rounded-full p-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                </svg>
-              </a>
               <a href="#" className="bg-white/10 hover:bg-[#00B750] transition rounded-full p-2">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
@@ -53,18 +39,6 @@ export default function LandingFooter() {
               <li><a href="#how-it-works" className="hover:text-[#00B750] transition">How it Works</a></li>
               <li><a href="#faq" className="hover:text-[#00B750] transition">FAQ</a></li>
               <li><a href="#" className="hover:text-[#00B750] transition">Integrations</a></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="font-bold mb-4">Resources</h3>
-            <ul className="space-y-2 text-white/60 text-sm">
-              <li><a href="#" className="hover:text-[#00B750] transition">Blog</a></li>
-              <li><a href="#" className="hover:text-[#00B750] transition">Help Center</a></li>
-              <li><a href="#" className="hover:text-[#00B750] transition">Case Studies</a></li>
-              <li><a href="#" className="hover:text-[#00B750] transition">API Documentation</a></li>
-              <li><a href="#" className="hover:text-[#00B750] transition">Status Page</a></li>
             </ul>
           </div>
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
+import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,11 +27,8 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="text-white/80 hover:text-white transition text-sm">
-            Sign In
-          </a>
           <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
-            Get Started
+            <Link href="https://app.kaarobot.pk">Get Started</Link>
           </Button>
         </div>
 

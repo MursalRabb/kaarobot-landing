@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -19,14 +18,16 @@ export default function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
-          Reduce E-Commerce Returns<br />
-          with <span className="text-[#00B750]">Smart WhatsApp</span> Confirmations
+          Reduce E-Commerce Returns
+          <br />
+          with <span className="text-[#00B750]">Smart WhatsApp</span>{" "}
+          Confirmations
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg md:text-2xl text-white/80 max-w-3xl mx-auto mb-10">
-          Kaarobot sends WhatsApp confirmations and provides AI chatbot support to ensure 
-          customers actually want their orders before delivery
+          Kaarobot sends WhatsApp confirmations and provides AI chatbot support
+          to ensure customers actually want their orders before delivery
         </p>
 
         {/* CTAs */}
@@ -34,8 +35,8 @@ export default function HeroSection() {
           <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition px-8 py-4 rounded-full text-lg">
             Start Free Trial
           </Button>
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="px-8 py-4 rounded-full text-lg border-2"
           >
             Watch Demo →
@@ -43,58 +44,59 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Image Placeholder */}
-        <div className="relative mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-[#00B750]/20 to-black border border-[#00B750]/30 rounded-2xl p-8 backdrop-blur-sm">
-            <div className="bg-black/60 rounded-xl p-6 space-y-4">
-              {/* WhatsApp Conversation Mock */}
-              <div className="flex items-start gap-3">
-                <div className="bg-[#00B750] rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.67-.33-3.82-.91l-.27-.16-2.84.48.48-2.84-.16-.27A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
-                  </svg>
-                </div>
-                <div className="bg-[#00B750]/20 border border-[#00B750]/40 rounded-2xl rounded-tl-none px-4 py-3 max-w-md">
-                  <p className="text-sm font-semibold text-[#00B750] mb-1">Kaarobot</p>
-                  <p className="text-white/90">Hi! We received your order #12345. Would you like to confirm? Reply YES to confirm or ask any questions about your order.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 justify-end">
-                <div className="bg-white/10 border border-white/20 rounded-2xl rounded-tr-none px-4 py-3 max-w-sm">
-                  <p className="text-white/90">Yes, confirm! Can you deliver tomorrow?</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="bg-[#00B750] rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.67-.33-3.82-.91l-.27-.16-2.84.48.48-2.84-.16-.27A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
-                  </svg>
-                </div>
-                <div className="bg-[#00B750]/20 border border-[#00B750]/40 rounded-2xl rounded-tl-none px-4 py-3 max-w-md">
-                  <p className="text-sm font-semibold text-[#00B750] mb-1">Kaarobot</p>
-                  <p className="text-white/90">✅ Order confirmed! Yes, delivery is scheduled for tomorrow between 2-5 PM. Thank you! 🎉</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="w-full">
+          <iframe
+            style={{
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+              height: "900px",
+              width: "600px",
+              margin: "0 auto",
+            }}
+            src="https://embed.figma.com/proto/wm22UpcOQquIp7rLUZrpNg/WhatsApp-UI-kit-for-chat-bot-design---prototyping--Android---Community-?node-id=501-1998&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2719%3A4461&show-proto-sidebar=0&embed-host=share&footer=false"
+          ></iframe>
         </div>
 
         {/* Trust Indicators */}
         <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/60 text-sm">
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#00B750]" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            <svg
+              className="w-5 h-5 text-[#00B750]"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clipRule="evenodd"
+              />
             </svg>
             <span>No credit card required</span>
           </div>
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#00B750]" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            <svg
+              className="w-5 h-5 text-[#00B750]"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clipRule="evenodd"
+              />
             </svg>
             <span>Setup in 5 minutes</span>
           </div>
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#00B750]" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            <svg
+              className="w-5 h-5 text-[#00B750]"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clipRule="evenodd"
+              />
             </svg>
             <span>99.9% uptime</span>
           </div>
@@ -103,4 +105,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

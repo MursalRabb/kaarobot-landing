@@ -67,7 +67,7 @@ export default function FAQSection() {
         <div className="mt-16 bg-gradient-to-br from-[#00B750] to-[#009e45] rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
           <p className="text-white/90 mb-6 max-w-xl mx-auto">
-            Our support team is here to help. Get in touch and we'll respond within 24 hours.
+            Our support team is here to help. Get in touch and we&apos;ll respond within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -80,7 +80,7 @@ export default function FAQSection() {
               Email Support
             </a>
             <a 
-              href="https://wa.me/923001234567" 
+              href="https://wa.me/923174427408" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-black/20 text-white font-semibold px-6 py-3 rounded-full hover:bg-black/30 transition border border-white/20"
