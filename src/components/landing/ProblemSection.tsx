@@ -8,7 +8,7 @@ export default function ProblemSection() {
             The COD Return Problem is<br />Costing You <span className="text-[#00B750]">Thousands</span>
           </h2>
           <p className="text-lg text-black/70 max-w-2xl mx-auto">
-            Every refused delivery hurts your bottom line. Here's the typical cycle:
+            Every refused delivery hurts your bottom line. Here&apos;s the typical cycle:
           </p>
         </div>
 

@@ -34,7 +34,7 @@ export interface AccordionItemProps extends React.HTMLAttributes<HTMLDivElement>
 }
 
 export const AccordionItem = React.forwardRef<HTMLDivElement, AccordionItemProps>(
-  ({ className, value, children, ...props }, ref) => {
+  ({ className, children, ...props }, ref) => {
     return (
       <div
         ref={ref}
