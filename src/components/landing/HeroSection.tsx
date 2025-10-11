@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-20 px-4 md:py-32 bg-gradient-to-b from-black via-black to-[#00B750]/10">
+    <section className="relative flex flex-col items-center justify-center text-center sm:py-20 px-4 py-14 bg-gradient-to-b from-black via-black to-[#00B750]/10">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#00B750]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -49,9 +49,10 @@ export default function HeroSection() {
             style={{
               border: "1px solid rgba(0, 0, 0, 0.1)",
               height: "900px",
-              width: "600px",
+              // width: "600px",
               margin: "0 auto",
             }}
+            className="sm:w-[600px] w-full"
             src="https://embed.figma.com/proto/wm22UpcOQquIp7rLUZrpNg/WhatsApp-UI-kit-for-chat-bot-design---prototyping--Android---Community-?node-id=501-1998&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2719%3A4461&show-proto-sidebar=0&embed-host=share&footer=false"
           ></iframe>
         </div>

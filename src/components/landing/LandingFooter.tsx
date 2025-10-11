@@ -73,7 +73,7 @@ export default function LandingFooter() {
           <div className="flex gap-6 text-white/60 text-sm">
             <a href="/privacy-policy" className="hover:text-[#00B750] transition">Privacy Policy</a>
             <a href="/terms-of-use" className="hover:text-[#00B750] transition">Terms of Service</a>
-            <a href="#" className="hover:text-[#00B750] transition">Cookie Policy</a>
+            {/* <a href="#" className="hover:text-[#00B750] transition">Cookie Policy</a> */}
           </div>
         </div>
       </div>

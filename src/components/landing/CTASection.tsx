@@ -58,7 +58,7 @@ export default function CTASection() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-6 max-w-2xl">
+              {/* <div className="grid grid-cols-3 gap-8 mt-6 max-w-2xl">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                   <div className="text-3xl font-bold mb-1">500+</div>
                   <div className="text-sm text-white/80">Active Stores</div>
@@ -71,7 +71,7 @@ export default function CTASection() {
                   <div className="text-3xl font-bold mb-1">70%</div>
                   <div className="text-sm text-white/80">Avg. Return Drop</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
