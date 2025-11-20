@@ -1,15 +1,24 @@
-import Header from "@/components/landing/Header";
-import HeroSection from "@/components/landing/HeroSection";
-import ProblemSection from "@/components/landing/ProblemSection";
-import SolutionSection from "@/components/landing/SolutionSection";
-import FeaturesSection from "@/components/landing/FeaturesSection";
-import HowItWorksSection from "@/components/landing/HowItWorksSection";
-import BenefitsSection from "@/components/landing/BenefitsSection";
-// import PricingSection from "@/components/landing/PricingSection";
-import FAQSection from "@/components/landing/FAQSection";
-import CTASection from "@/components/landing/CTASection";
-import LandingFooter from "@/components/landing/LandingFooter";
+import ComingSoon from "@/components/landing/ComingSoon";
 
+// Commented out sections for later restoration
+// import Header from "@/components/landing/Header";
+// import HeroSection from "@/components/landing/HeroSection";
+// import ProblemSection from "@/components/landing/ProblemSection";
+// import SolutionSection from "@/components/landing/SolutionSection";
+// import FeaturesSection from "@/components/landing/FeaturesSection";
+// import HowItWorksSection from "@/components/landing/HowItWorksSection";
+// import BenefitsSection from "@/components/landing/BenefitsSection";
+// import PricingSection from "@/components/landing/PricingSection";
+// import FAQSection from "@/components/landing/FAQSection";
+// import CTASection from "@/components/landing/CTASection";
+// import LandingFooter from "@/components/landing/LandingFooter";
+
+export default function Home() {
+  return <ComingSoon />;
+}
+
+// Uncomment below to restore the full landing page:
+/*
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white font-sans">
@@ -21,7 +30,6 @@ export default function Home() {
         <FeaturesSection />
         <HowItWorksSection />
         <BenefitsSection />
-        {/* <PricingSection /> */}
         <FAQSection />
         <CTASection />
       </main>
@@ -29,3 +37,4 @@ export default function Home() {
     </div>
   );
 }
+*/

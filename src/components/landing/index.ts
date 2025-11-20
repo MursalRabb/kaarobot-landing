@@ -10,4 +10,5 @@ export { default as PricingSection } from './PricingSection';
 export { default as FAQSection } from './FAQSection';
 export { default as CTASection } from './CTASection';
 export { default as LandingFooter } from './LandingFooter';
+export { default as ComingSoon } from './ComingSoon';
 
