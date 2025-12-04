@@ -70,7 +70,7 @@ export default function TermsOfUse() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4">6) Third-party services</h2>
             <ul className="list-disc list-inside space-y-2">
-              <li>The service integrates with Shopify, Twilio (WhatsApp), OpenAI, Google OAuth, and hosting providers (e.g., AWS). Your use is subject to their terms and policies.</li>
+              <li>The service integrates with Shopify, Meta Whatsapp API, OpenAI, Google OAuth, and hosting providers (e.g., AWS). Your use is subject to their terms and policies.</li>
             </ul>
           </div>
 

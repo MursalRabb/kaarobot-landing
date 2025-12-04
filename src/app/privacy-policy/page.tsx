@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-2">
               <li>Merchant user data (controller role): name, email, profile picture (from Google OAuth); account and settings; session tokens via HttpOnly cookies (idToken, refreshToken).</li>
               <li>Shopify order data (processor role): order totals, order title/name, line items, product metadata needed for messaging; order status mapping; hashed phone number and encrypted phone number for conversation linking.</li>
-              <li>WhatsApp messaging data (processor role): outbound message metadata (Twilio message ID, status); inbound message body and selected webhook metadata. We deliberately avoid storing raw `WaId`, `From`, `ChannelMetadata`, and `ProfileName` fields, and we store phone references only in hashed/encrypted form.</li>
+              <li>WhatsApp messaging data (processor role): outbound message metadata (message ID, status); inbound message body and selected webhook metadata. We deliberately avoid storing raw `WaId`, `From`, `ChannelMetadata`, and `ProfileName` fields, and we store phone references only in hashed/encrypted form.</li>
               <li>Conversations (processor role): customer messages, agent responses, and event metadata necessary to render conversation history and update order statuses.</li>
               <li>AI operations (processor role): subsets of order details, FAQs, conversation history snippets may be shared with our AI provider strictly to generate relevant responses. We do not instruct models to store personal data beyond request processing.</li>
               <li>System data: device, IP, or logs may be processed by hosting and infrastructure providers as part of security and delivery. We currently do not use analytics or marketing cookies.</li>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-2">
               <li>Directly from merchant users (OAuth sign-in).</li>
               <li>Via Shopify APIs and webhooks (orders).</li>
-              <li>Via WhatsApp/Twilio webhook (inbound messages) and Twilio messaging API (outbound).</li>
+              <li>Via WhatsApp webhook (inbound messages) and Meta Whatsapp API (outbound).</li>
               <li>From our application logic (conversation and order updates).</li>
               <li>From our AI provider for real-time inference (inputs and outputs).</li>
             </ul>
@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold text-white mb-4">7) Data sharing and international transfers</h2>
             <ul className="list-disc list-inside space-y-2">
               <li>Shopify: to ingest orders and update related status.</li>
-              <li>Twilio WhatsApp: to send/receive WhatsApp messages; message body and template variables are transmitted to Twilio.</li>
+              <li>Meta WhatsApp API: to send/receive WhatsApp messages; message body and template variables are transmitted to Meta WhatsApp API.</li>
               <li>OpenAI: to generate conversation replies and product FAQs; relevant, minimized inputs are sent.</li>
               <li>Google OAuth: for merchant user sign-in and token handling.</li>
               <li>Hosting (e.g., AWS, likely us-east-1): application and database hosting.</li>
