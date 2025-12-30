@@ -28,7 +28,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
-            <Link href="https://app.kaarobot.pk">Get Started</Link>
+            <Link href="https://apps.shopify.com/kaarobot">Get Started</Link>
           </Button>
         </div>
 

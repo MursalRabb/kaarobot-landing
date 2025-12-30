@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -33,7 +34,7 @@ export default function HeroSection() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition px-8 py-4 rounded-full text-lg">
-            Start Free Trial
+            <Link href="https://apps.shopify.com/kaarobot">Start Free Trial</Link>
           </Button>
           <Button
             variant="outline"

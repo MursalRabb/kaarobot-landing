@@ -24,7 +24,7 @@ export default function CTASection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button className="bg-white text-[#00B750] font-semibold hover:bg-gray-100 transition px-10 py-6 cursor-pointer rounded-full text-lg shadow-xl">
-                <Link href="https://app.kaarobot.pk">Start Free Trial</Link>
+                <Link href="https://apps.shopify.com/kaarobot">Start Free Trial</Link>
               </Button>
               <Button 
                 variant="outline" 

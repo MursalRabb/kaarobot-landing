@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/images/logo.svg";
 
 export default function TermsOfUse() {
   return (
@@ -7,15 +9,7 @@ export default function TermsOfUse() {
       <div className="border-b border-white/10">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="inline-flex items-center gap-2 hover:opacity-80 transition">
-            <div className="bg-[#00B750] rounded-full p-2">
-              <svg width="24" height="24" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#00B750" />
-                <rect x="10" y="15" width="20" height="10" rx="5" fill="white" />
-                <circle cx="15" cy="20" r="2" fill="#00B750" />
-                <circle cx="25" cy="20" r="2" fill="#00B750" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold">kaarobot<span className="text-[#00B750]">.pk</span></span>
+           <Image src={logo} alt="Kaarobot" height={36} />
           </Link>
         </div>
       </div>
