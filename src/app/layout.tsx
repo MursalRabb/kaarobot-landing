@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const FB_PIXEL_ID="263124089002709"
+const FB_PIXEL_ID="1263124089002709"
 
 export default function RootLayout({
   children,
