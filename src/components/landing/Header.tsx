@@ -4,10 +4,21 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
-import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleGetStarted = async () => {
+    const eventID = crypto.randomUUID();
+    window.fbq?.(
+      "track",
+      "Lead",
+      { method: "email" },
+      { eventID }
+    );
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    window.location.href = "https://apps.shopify.com/kaarobot";
+  };
 
   return (
     <header className="w-full sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
@@ -27,8 +38,8 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
-            <Link href="https://apps.shopify.com/kaarobot">Get Started</Link>
+          <Button onClick={handleGetStarted} className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
+            Get Started
           </Button>
         </div>
 
@@ -83,10 +94,7 @@ export default function Header() {
               FAQ
             </a>
             <div className="border-t border-white/10 pt-4 space-y-3">
-              <a href="#" className="block text-white/80 hover:text-white transition">
-                Sign In
-              </a>
-              <Button className="w-full bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
+              <Button onClick={handleGetStarted} className="w-full bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition">
                 Get Started
               </Button>
             </div>

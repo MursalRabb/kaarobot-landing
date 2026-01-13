@@ -1,7 +1,18 @@
+"use client";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function CTASection() {
+  const handleStartFreeTrial = async () => {
+    const eventID = crypto.randomUUID();
+    window.fbq?.(
+      "track",
+      "Lead",
+      { method: "email" },
+      { eventID }
+    );
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    window.location.href = "https://apps.shopify.com/kaarobot";
+  };
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-[#00B750] via-[#009e45] to-[#00B750] text-white">
       <div className="max-w-4xl mx-auto text-center">
@@ -23,8 +34,8 @@ export default function CTASection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button className="bg-white text-[#00B750] font-semibold hover:bg-gray-100 transition px-10 py-6 cursor-pointer rounded-full text-lg shadow-xl">
-                <Link href="https://apps.shopify.com/kaarobot">Start Free Trial</Link>
+              <Button onClick={handleStartFreeTrial} className="bg-white text-[#00B750] font-semibold hover:bg-gray-100 transition px-10 py-6 cursor-pointer rounded-full text-lg shadow-xl">
+                Start Free Trial
               </Button>
               <Button 
                 variant="outline" 

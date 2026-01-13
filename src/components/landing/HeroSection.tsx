@@ -1,8 +1,19 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
 
 export default function HeroSection() {
+  const handleStartFreeTrial = async () => {
+    const eventID = crypto.randomUUID();
+    window.fbq?.(
+      "track",
+      "Lead",
+      { method: "email" },
+      { eventID }
+    );
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    window.location.href = "https://apps.shopify.com/kaarobot";
+  };
   return (
     <section className="relative flex flex-col items-center justify-center text-center sm:py-20 px-4 py-14 bg-gradient-to-b from-black via-black to-[#00B750]/10">
       {/* Animated Background */}
@@ -33,8 +44,8 @@ export default function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition px-8 py-4 rounded-full text-lg">
-            <Link href="https://apps.shopify.com/kaarobot">Start Free Trial</Link>
+          <Button onClick={handleStartFreeTrial} className="bg-[#00B750] text-black font-semibold hover:bg-[#009e45] transition px-8 py-4 rounded-full text-lg">
+            Start Free Trial
           </Button>
           <Button
             variant="outline"
